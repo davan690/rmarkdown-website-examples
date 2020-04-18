@@ -1,5 +1,43 @@
 ---
-title: "My Website"
+title: "Index"
+author: "Anthony Davidson"
+date: "13/10/2019"
+site: bookdown::bookdown_site
+output: 
+  bookdown::html_document2: 
+    theme: united
+    highlight: tango
+    fig_caption: yes
+    toc: yes
+    toc_float: true
+    code_folding: hide
+    df_print: paged
+    number_sections: false
+    output_dir: "gh-pages"
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+    latex_engine: xelatex
+    citation_package: natbib
+    keep_tex: yes
+  bookdown::epub_book: default
+  bookdown::word_document2:
+    reference_docx: template1.docx
+    fig_caption: yes
+    toc: yes
+    number_sections: false
 ---
 
 Hello, Website!
+
+```{r}
+# sets paths for computers with other software components
+# this code block produces an enviroment warning
+# but not sure how to sort depenancies still
+# Feb2020
+# myPaths <- .libPaths("C:/Program Files/R/R-3.6.2/library")
+# myPaths <- c(myPaths)
+# .libPaths(myPaths)  # add new path
+# .libPaths()
+```
+

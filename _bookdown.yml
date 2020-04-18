@@ -1,0 +1,9 @@
+book_filename: "Davidson2020_mpd_data"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: " "
+rmd_files: ["index.Rmd", "01-introduction.Rmd", "02-data_input.Rmd", "03-methods-process-models.Rmd",
+"03-methods_analysis.Rmd","04-results-April2020.Rmd", "05-discussion.Rmd"]
+#, "03-methods-process-models.Rmd"]
+always_allow_html: true
